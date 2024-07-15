@@ -1,0 +1,17 @@
+/* @import url('./node_modules/animate.css/animate.min.css'); */
+@import url('./node_modules/sweetalert2/dist/sweetalert2.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* in style.css // to edit the css of the SweetAlert popup*/ 
+.swal2-confirm{
+    @apply bg-slate-800 border-none !important
+}
+.swal2-cancel{
+    @apply bg-slate-600 border-none !important
+}
+.swal2-warning, .swal2-icon-content{
+    @apply text-red-600
+}
