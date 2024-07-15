@@ -113,7 +113,7 @@ export const deleteTask = (listID) => {
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!"
+        confirmButtonText: "Yes, remove it!"
       }).then((result) => {
         if (result.isConfirmed) {
             currentList.classList.add("animate_animated", "animate__hinge")
@@ -124,7 +124,7 @@ export const deleteTask = (listID) => {
             currentList.remove();
           Swal.fire({
             title: "Deleted!",
-            text: "Your file has been deleted.",
+            text: "Your Task has been deleted.",
             icon: "success"
           });
         }
