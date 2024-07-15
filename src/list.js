@@ -124,7 +124,7 @@ export const deleteTask = (listID) => {
             currentList.remove();
           Swal.fire({
             title: "Deleted!",
-            text: "Your Task has been deleted.",
+            text: "Your Task has been removed.",
             icon: "success"
           });
         }
